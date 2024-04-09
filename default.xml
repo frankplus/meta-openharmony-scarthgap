@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: Huawei Inc.
+-->
+<manifest>
+  <remote name="mrfrank" fetch="https://github.com/frankplus" />
+  <remote name="openembedded" fetch="https://git.openembedded.org" />
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git" />
+  <remote name="kraj" fetch="https://github.com/kraj" />
+  <default revision="master" sync-j="4" />
+
+  <project name="meta-openharmony-scarthgap" remote="mrfrank" path="meta-openharmony" />
+  <project name="bitbake" remote="openembedded" />
+  <project name="openembedded-core" remote="openembedded" />
+  <project name="meta-openembedded" remote="openembedded" />
+  <project name="meta-clang" remote="kraj" />
+  <project name="meta-java" remote="yocto" />
+  <project name="meta-raspberrypi" remote="yocto" />
+  
+</manifest>
