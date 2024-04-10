@@ -1,0 +1,22 @@
+diff --git a/rpi4/config.json b/rpi4/config.json
+index 8f7f242..8a80511 100644
+--- a/rpi4/config.json
++++ b/rpi4/config.json
+@@ -2,14 +2,14 @@
+   "product_name": "rpi4",
+   "device_company": "iscas",
+   "device_build_path": "device/board/iscas/rpi4",
+-  "target_cpu": "arm64",
++  "target_cpu": "arm",
+   "type": "standard",
+   "version": "3.0",
+   "board": "rpi4",
+   "api_version": 8,
+-  "enable_ramdisk": true,
++  "enable_ramdisk": false,
+   "build_selinux": false,
+-  "build_seccomp": true,
++  "build_seccomp": false,
+   "inherit": [ "productdefine/common/inherit/rich.json", "productdefine/common/inherit/chipset_common.json" ],
+   "subsystems": [
+     {

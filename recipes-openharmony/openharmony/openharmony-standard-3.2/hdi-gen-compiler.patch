@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: Huawei Inc.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+Patch for //drivers/framework git repository of OpenHarmony 3.1 codebase.
+
+Build hdi-gen with Yocto native toolchain.
+
+Signed-off-by: Esben Haabendal <esben.haabendal@huawei.com>
+Upstream-Status: Inappropriate
+
+diff --git a/tools/hdi-gen/Makefile b/tools/hdi-gen/Makefile
+index 033c257575dc..99e0d0ca7a0a 100644
+--- a/tools/hdi-gen/Makefile
++++ b/tools/hdi-gen/Makefile
+@@ -27,9 +28,9 @@ endif
+ 
+ all:
+ 	$(Q) echo start build $(TARGET) ...
+-	$(Q) $(MAKE) -f $(MAKE_FILE_NAME)
++	$(Q) $(MAKE) CXX=g++ -f $(MAKE_FILE_NAME)
+ 
+ clean:
+ 	$(Q) $(MAKE) -f $(MAKE_FILE_NAME) clean
