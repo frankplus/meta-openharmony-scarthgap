@@ -9,11 +9,11 @@ Build hdi-gen with Yocto native toolchain.
 Signed-off-by: Esben Haabendal <esben.haabendal@huawei.com>
 Upstream-Status: Inappropriate
 
-diff --git a/tools/hdi-gen/Makefile b/tools/hdi-gen/Makefile
-index 033c257575dc..99e0d0ca7a0a 100644
---- a/tools/hdi-gen/Makefile
-+++ b/tools/hdi-gen/Makefile
-@@ -27,9 +28,9 @@ endif
+diff --git a/framework/tools/hdi-gen/Makefile b/framework/tools/hdi-gen/Makefile
+index 437bd00b5..0fa400708 100644
+--- a/framework/tools/hdi-gen/Makefile
++++ b/framework/tools/hdi-gen/Makefile
+@@ -27,7 +27,7 @@ endif
  
  all:
  	$(Q) echo start build $(TARGET) ...

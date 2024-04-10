@@ -34,7 +34,7 @@ B = "${S}/out/rpi4"
 SRC_URI += "file://prebuilts_download.sh"
 SRC_URI += "file://prebuilts_download.py"
 
-SRC_URI += "file://hdi-gen-compiler.patch;patchdir=${S}/drivers/hdf_core/framework"
+SRC_URI += "file://hdi-gen-compiler.patch;patchdir=${S}/drivers/hdf_core"
 SRC_URI += "file://rpi4-config-json.patch;patchdir=${S}/vendor/iscas"
 
 # clean build directory if already exists
