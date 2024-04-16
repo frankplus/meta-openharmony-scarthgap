@@ -26,6 +26,8 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}-${PV}:"
 
 include ${PN}-sources-${PV}.inc
 
+require java-tools.inc
+
 inherit ccache
 
 OHOS_PRODUCT_NAME="rpi4"
